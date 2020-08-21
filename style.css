@@ -66,20 +66,21 @@ a {
 	height: 300px;
 	object-fit: cover;
 	display: block;
-  	margin-right: auto;
-  	margin-left: auto;
-  	border: 7px solid #a3b9c9;
+	margin-right: auto;
+  margin-left: auto;
+  border: 7px solid #a3b9c9;
 }
 
 .home-page-body, .fun-facts {
 	text-align: center;
 	list-style-type: none;
-	margin-left: 200px;
-	margin-right: 200px;
+	margin-left: 300px;
+	margin-right: 300px;
 }
 
 .fun-facts {
-	margin-right: 250px;
+  margin-left: 30px;
+	margin-right: 80px;
 	font-size: 20px;
 	font-family: 'Spectral', serif;
 
