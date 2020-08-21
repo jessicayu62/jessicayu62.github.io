@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+
+body {
+	background-color: #FCFCF5;
+}
+
+.no-underline {
+	text-decoration: none;
+	color: black;
+}
+
+.top-bar {
+	display: absolute;
+}
+
+.nav-bar {
+	display: flex;
+	justify-content: flex-end;
+	list-style-type: none;
+	margin-bottom: 50px;
+	margin-right: 45px;
+}
+
+.nav-bar-options {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 30px;
+	margin-right: 30px;
+	font-family: 'Reem Kufi', sans-serif;
+	font-size: 23px;
+} 
+
+.logo {
+	font-size: 60px;
+	margin-right: 60%;
+	text-shadow: 2px 2px #a3b9c9;
+	font-family: 'Yeseva One', cursive;
+}
+
+.logo:hover {
+	cursor: pointer;
+}
+
+.nav-bar-options:hover {
+	/*text-decoration: underline;*/
+	background-color: #a3b9c9;
+	border-radius: 20px;
+	cursor: pointer;
+} 
+
+h1 {
+	font-size: 60px;
+	color: #a3b9c9;
+	/*font-family: 'Alata', sans-serif;*/
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+.resume {
+ 	width: 50%;
+ 	height: 50%;
+ 	object-fit: cover;
+ 	display: block;
+  	margin-right: auto;
+  	margin-left: auto;
+  	border-radius: 30px;
+}
+
+.resume-button {
+	color: #a3b9c9;
+	/*background-color: white;*/
+	border: 5px solid #a3b9c9;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-top: 30px;
+	margin-left: 38%;
+	margin-right: 38%;
+	margin-bottom: 30px;
+	border-radius: 50px;
+	font-family: 'Alata', sans-serif;
+	font-size: 30px;
+}
+
+.resume-button:hover {
+	background-color: #a3b9c9;
+	border-color: #a3b9c9;
+	color: white;
+}
+
+p {
+	text-align: center;
+	font-family: 'Alata', sans-serif;
+	font-size: 30px;
+}
+
+#contact-logos {
+	width: auto;
+ 	height: auto;
+	display: flex;
+	justify-content: center;
+}
+
+.sizing {
+	width: 130px;
+ 	height: 130px;
+ 	margin: 30px;
+}
+
+#email:hover {
+	/*padding: 1px;*/
+	border-radius: 20px;
+	background-color: #a3b9c9
+}
+
+#linkedin:hover {
+	/*padding: 1px;*/
+	border-radius: 10px;
+	background-color: #a3b9c9
+}
+
+#github:hover {
+	/*padding: 1px;*/
+	border-radius: 50%;
+	background-color: #a3b9c9
+}
+
+#highlight {
+	/*text-decoration: underline;*/
+	background-color: #a3b9c9;
+	border-radius: 20px;
+}
