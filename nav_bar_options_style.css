@@ -21,29 +21,24 @@ body {
 .nav-bar {
 	display: flex;
 	margin-left: 3%;
-	/*justify-content: flex-center;*/
 	list-style-type: none;
 	margin-bottom: 50px;
   animation-timing-function: ease-in-out;
 }
 
 .nav-bar-options {
-	/*padding-top: 20px;
-	padding-bottom: 0px;*/
 	margin-top: 20px;
 	margin-bottom: 20px;
-/*  padding-left: 30px;
-  padding-right: 30px;*/
 	margin-left: auto;
 	margin-right: auto;
-  align-self: flex-end;
+  	align-self: flex-end;
 	font-family: 'Reem Kufi', sans-serif;
 	font-size: 23px;
 
 } 
 
 .logo {
-	font-size: 60px;
+	font-size: 65px;
 	margin-right: 60%;
 	text-shadow: 2px 2px #a3b9c9;
 	font-family: 'Yeseva One', cursive;
@@ -54,7 +49,6 @@ body {
 }
 
 .nav-bar-options:hover {
-	/*text-decoration: underline;*/
 	background-color: #a3b9c9;
 	border-radius: 20px;
 	cursor: pointer;
@@ -63,7 +57,6 @@ body {
 h1 {
 	font-size: 60px;
 	color: #a3b9c9;
-	/*font-family: 'Alata', sans-serif;*/
 	font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -127,25 +120,21 @@ p {
 }
 
 #email:hover {
-	/*padding: 1px;*/
 	border-radius: 20px;
 	background-color: #a3b9c9
 }
 
 #linkedin:hover {
-	/*padding: 1px;*/
 	border-radius: 10px;
 	background-color: #a3b9c9
 }
 
 #github:hover {
-	/*padding: 1px;*/
 	border-radius: 50%;
 	background-color: #a3b9c9
 }
 
 #highlight {
-	/*text-decoration: underline;*/
 	background-color: #a3b9c9;
 	border-radius: 20px;
 }
