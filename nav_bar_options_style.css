@@ -76,7 +76,6 @@ h1, h2 {
 
 .resume-button {
 	color: #a3b9c9;
-	/*background-color: white;*/
 	border: 5px solid #a3b9c9;
 	text-decoration: none;
 	display: flex;
@@ -90,6 +89,7 @@ h1, h2 {
 	border-radius: 50px;
 	font-family: 'Alata', sans-serif;
 	font-size: 30px;
+	text-align: center;
 }
 
 .resume-button:hover {
