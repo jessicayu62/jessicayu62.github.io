@@ -137,6 +137,7 @@ p {
 }
 
 #github:hover {
+	border-radius: 50%;
 	background-color: #a3b9c9
 }
 
