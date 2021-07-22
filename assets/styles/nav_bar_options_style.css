@@ -20,28 +20,31 @@ body {
 
 .nav-bar {
 	display: flex;
-	margin-left: 3%;
+	margin-left: 1%;
 	list-style-type: none;
-	margin-bottom: 50px;
-  animation-timing-function: ease-in-out;
+	font-family: 'Reem Kufi', sans-serif;
+	font-size: 23px;
+}
+
+.logo {
+	font-size: 65px;
+	margin-right: auto;
+	text-shadow: 2px 2px #a3b9c9;
+	font-family: 'Yeseva One', cursive;
 }
 
 .nav-bar-options {
 	margin-top: 20px;
 	margin-bottom: 20px;
-	margin-left: auto;
-	margin-right: auto;
-  	align-self: flex-end;
-	font-family: 'Reem Kufi', sans-serif;
-	font-size: 23px;
-
+	margin-left: 2%;
+	margin-right: 2%;
 } 
 
-.logo {
-	font-size: 65px;
-	margin-right: 60%;
-	text-shadow: 2px 2px #a3b9c9;
-	font-family: 'Yeseva One', cursive;
+.contact {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-right: 3%;
+	margin-left: 2%;
 }
 
 .logo:hover {
@@ -64,13 +67,16 @@ h1, h2 {
 	text-align: center;
 }
 
+.resume-section {
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+   flex-direction: column;
+}
+
 .resume {
  	width: 50%;
  	height: 50%;
- 	object-fit: cover;
- 	display: block;
-  	margin-right: auto;
-  	margin-left: auto;
   	border-radius: 30px;
 }
 
@@ -78,19 +84,19 @@ h1, h2 {
 	color: #a3b9c9;
 	border: 5px solid #a3b9c9;
 	text-decoration: none;
-	display: flex;
-	justify-content: center;
 	padding-top: 20px;
 	padding-bottom: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
 	margin-top: 30px;
-	margin-left: 38%;
-	margin-right: 38%;
 	margin-bottom: 30px;
 	border-radius: 50px;
 	font-family: 'Alata', sans-serif;
 	font-size: 30px;
 	text-align: center;
+
 }
+
 
 .resume-button:hover {
 	background-color: #a3b9c9;
@@ -113,6 +119,7 @@ p {
 	animation-timing-function: ease-in-out;
 }
 
+
 .sizing {
 	width: 130px;
  	height: 130px;
@@ -120,7 +127,7 @@ p {
 }
 
 #email:hover {
-	border-radius: 20px;
+	border-radius: 16px;
 	background-color: #a3b9c9
 }
 

@@ -20,41 +20,43 @@ a {
 
 .nav-bar {
 	display: flex;
-	margin-left: 3%;
+	margin-left: 1%;
 	list-style-type: none;
-	margin-bottom: 50px;
-	animation-timing-function: ease-in-out;
+	font-family: 'Reem Kufi', sans-serif;
+	font-size: 23px;
 }
+
 
 .nav-bar-options {
 	margin-top: 20px;
 	margin-bottom: 20px;
-	margin-left: auto;
-	margin-right: auto;
-	align-self: flex-end;
-	font-family: 'Reem Kufi', sans-serif;
-	font-size: 23px;
-
+	margin-left: 2%;
+	margin-right: 2%;
 } 
+
+.contact {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-right: 3%;
+	margin-left: 2%;
+}
 
 .logo {
 	font-size: 65px;
-	margin-right: 60%;
+	margin-right: auto;
 	text-shadow: 2px 2px #a3b9c9;
 	font-family: 'Yeseva One', cursive;
 }
-
 
 .logo:hover {
 	cursor: pointer;
 }
 
-.nav-bar-options:hover {
+.nav-bar-options:hover, .contact :hover {
 	background-color: #a3b9c9;
 	border-radius: 20px;
 	cursor: pointer;
 } 
-
 
 .prof-pic {
 	border-radius: 50%;
