@@ -9,7 +9,7 @@
 
 body {
 	background-color: #FCFCF5;
-	background-image: url("assets/images/background_img.png");
+	background-image: url(../images/background_img.png);
 
 }
 
@@ -23,7 +23,7 @@ a {
 	margin-left: 3%;
 	list-style-type: none;
 	margin-bottom: 50px;
-  animation-timing-function: ease-in-out;
+	animation-timing-function: ease-in-out;
 }
 
 .nav-bar-options {
@@ -31,7 +31,7 @@ a {
 	margin-bottom: 20px;
 	margin-left: auto;
 	margin-right: auto;
-  align-self: flex-end;
+	align-self: flex-end;
 	font-family: 'Reem Kufi', sans-serif;
 	font-size: 23px;
 
@@ -55,31 +55,36 @@ a {
 	cursor: pointer;
 } 
 
+
 .prof-pic {
 	border-radius: 50%;
 	width: 300px;
 	height: 300px;
 	object-fit: cover;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border: 7px solid #a3b9c9;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border: 7px solid #a3b9c9;
 }
 
 .about-me-text {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
+/*	margin-left: 280px;
+margin-right: 280px;*/
+	margin-left: 28%;
+	margin-right: 28%;
+	align-items: center;
+	justify-content: center; 
 	text-align: center;
-	margin-left: 280px;
-	margin-right: 280px;
 }
 
 .fun-facts {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 	margin-right: 45px;
-  text-align: center;
-  list-style-type: none;
+	text-align: center;
+	list-style-type: none;
 	font-size: 20px;
 	font-family: 'Spectral', serif;
 
@@ -94,6 +99,10 @@ h2 {
 }
 
 h1, h3 {
+	display: flex;
+	align-items: center;
+	justify-content: center; 
+	text-align: center;
 	text-align: center;
 	font-family: 'Alata', sans-serif;
 }
@@ -107,7 +116,7 @@ h3
 p {
 	font-size: 20px;
 	font-family: 'Spectral', serif;
-	/*text-align: center;*/
+	display: flex;
 }
 
 h5 {
@@ -134,160 +143,160 @@ h5 {
 
 /* The actual timeline (the vertical ruler) */
 .timeline {
-  position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
+	position: relative;
+	max-width: 1200px;
+	margin: 0 auto;
 
 
 }
 
 /* The actual timeline (the vertical ruler) */
 .timeline::after {
-  content: '';
-  border-radius: 20px;
-  position: absolute;
-  width: 6px;
-  background-color: white;
-  top: 0;
-  bottom: 0;
-  /*left: 50%;*/
-  left: 12.5%;
+	content: '';
+	border-radius: 20px;
+	position: absolute;
+	width: 6px;
+	background-color: white;
+	top: 0;
+	bottom: 0;
+	/*left: 50%;*/
+	left: 12.5%;
 
 }
 
 /* Container around content */
 .container {
-  margin-left: 0px;
-  margin-right: 0px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  position: relative;
-  background-color: inherit;
-  width: 68%;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	position: relative;
+	background-color: inherit;
+	width: 68%;
 }
 
 /* The circles on the timeline */
 .container::after {
-  content: '';
-  position: absolute;
-  width: 25px;
-  height: 25px;
+	content: '';
+	position: absolute;
+	width: 25px;
+	height: 25px;
 
-  /*right: 17px;*/
-  background-color: white;
-  border: 4px solid #FF9F55;
-  top: 95px;
-  border-radius: 50%;
-  z-index: 1;
+	/*right: 17px;*/
+	background-color: white;
+	border: 4px solid #FF9F55;
+	top: 95px;
+	border-radius: 50%;
+	z-index: 1;
 }
 
 
 /* Place the container to the right */
 .right{
-  left: 20%;
+	left: 20%;
 }
 
 
 /* Add arrows to the right container (pointing left) */
 .right::before {
-  content: " ";
-  height: 0px;
-  position: absolute;
-  top: 100px;
-  width: 0px;
-  z-index: 1;
-  left: -25px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
+	content: " ";
+	height: 0px;
+	position: absolute;
+	top: 100px;
+	width: 0px;
+	z-index: 1;
+	left: -25px;
+	border: medium solid white;
+	border-width: 10px 10px 10px 0;
+	border-color: transparent white transparent transparent;
 }
 
 /* Fix the circle for containers on the right side */
 .right::after {
-  left: -12%;
+	left: -12%;
 }
 
 /* The actual content */
 .content {
-  padding: 20px 30px;
-  background-color: white;
-  position: relative;
-  margin-left: -35px;
-  border-radius: 25px;
+	padding: 20px 30px;
+	background-color: white;
+	position: relative;
+	margin-left: -35px;
+	border-radius: 25px;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 600px) {
-  /* Place the timelime to the left */
-  .timeline::after {
-  left: 10px;
-  }
-  
-  /* Full-width containers */
-  .container {
-  width: 100%;
-  padding-left: 70px;
-  padding-right: 25px;
-  }
-  
-  /* Make sure that all arrows are pointing leftwards */
-  .container::before {
-  left: 60px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
-  }
+@media screen and (max-width: 200px) {
+	/* Place the timelime to the left */
+	.timeline::after {
+		left: 10px;
+	}
 
-  /* Make sure all circles are at the same spot */
-  .right::after {
-  left: 15px;
-  }
-  
-  /* Make all right containers behave like the left ones */
-  .right {
-  left: 0%;
-  }
+	/* Full-width containers */
+	.container {
+		width: 100%;
+		padding-left: 70px;
+		padding-right: 25px;
+	}
+
+	/* Make sure that all arrows are pointing leftwards */
+	.container::before {
+		left: 60px;
+		border: medium solid white;
+		border-width: 10px 10px 10px 0;
+		border-color: transparent white transparent transparent;
+	}
+
+	/* Make sure all circles are at the same spot */
+	.right::after {
+		left: 15px;
+	}
+
+	/* Make all right containers behave like the left ones */
+	.right {
+		left: 0%;
+	}
 
 
 }
 
 #myBtn {
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 10px; /* Place the button at the bottom of the page */
-  right: 5px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color:  transparent; /* Set a background color */
-  color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding-left: 0px; /* Some padding */
-  padding-right: 0px;
-  padding-top: 15px;
-  padding-bottom: 0px;
-  border-radius: 10px; /* Rounded corners */
-  font-size: 50px; /* Increase font size */
+	display: none; /* Hidden by default */
+	position: fixed; /* Fixed/sticky position */
+	bottom: 10px; /* Place the button at the bottom of the page */
+	right: 5px; /* Place the button 30px from the right */
+	z-index: 99; /* Make sure it does not overlap */
+	border: none; /* Remove borders */
+	outline: none; /* Remove outline */
+	background-color:  transparent; /* Set a background color */
+	color: white; /* Text color */
+	cursor: pointer; /* Add a mouse pointer on hover */
+	padding-left: 0px; /* Some padding */
+	padding-right: 0px;
+	padding-top: 15px;
+	padding-bottom: 0px;
+	border-radius: 10px; /* Rounded corners */
+	font-size: 50px; /* Increase font size */
 }
 
 #myBtn:hover {
-  font-size: 60px; 
+	font-size: 60px; 
 }
 
 .come-in {
-  transform: translateY(1000px);
-  animation: come-in 1.2s ease forwards;
+	transform: translateY(1000px);
+	animation: come-in 1.2s ease forwards;
 }
 .come-in:nth-child(odd) {
-  animation-duration: 1.5s;
+	animation-duration: 1.5s;
 }
 .already-visible {
-  transform: translateY(0);
-  animation: none;
+	transform: translateY(0);
+	animation: none;
 }
 
 @keyframes come-in {
-  to { transform: translateY(0); }
+	to { transform: translateY(0); }
 }
