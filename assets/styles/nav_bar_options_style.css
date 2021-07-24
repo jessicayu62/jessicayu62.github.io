@@ -58,7 +58,7 @@ body {
 } 
 
 h1 {
-	font-size: 60px;
+	font-size: 4.5vw;
 	color: #a3b9c9;
 	font-family: 'Josefin Sans', sans-serif;
 }
@@ -82,7 +82,7 @@ h1, h2 {
 
 .resume-button {
 	color: #a3b9c9;
-	border: 5px solid #a3b9c9;
+	border: .4vw solid #a3b9c9;
 	text-decoration: none;
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -92,7 +92,7 @@ h1, h2 {
 	margin-bottom: 30px;
 	border-radius: 50px;
 	font-family: 'Alata', sans-serif;
-	font-size: 30px;
+	font-size: 2.2vw;
 	text-align: center;
 
 }
