@@ -1,84 +1,18 @@
-// //Get the button:
-// mybutton = document.getElementById("myBtn");
+$(() => {
+  $(window).scroll(function() {
+    var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+    var windowTop = $(this).scrollTop();
 
-// // When the user scrolls down 20px from the top of the document, show the button
-// window.onscroll = function() {
-// 	scrollFunction()
-// };
-
-// function scrollFunction() {
-//   if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
-//     mybutton.style.display = "block";
-//   } else {
-//     mybutton.style.display = "none";
-//   }
-// }
-
-// // When the user clicks on the button, scroll to the top of the document
-// function topFunction() {
-//   document.body.scrollTop = 0; // For Safari
-//   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-// }
-
-$(window).scroll(function() {
-    var height = $(window).scrollTop();
-    if (height > 400) {
-        $('#myBtn').fadeIn();
-    } else {
-        $('#myBtn').fadeOut();
-    }
-});
-$(document).ready(function() {
-    $("#myBtn").click(function(event) {
-        event.preventDefault();
-        $("html, body").animate({ scrollTop: 0 }, "slow");
-        return false;
+    $('.fade-scroll').each(function() {
+      /* Check the location of each desired element */
+      var objectBottom = $(this).offset().top + $(this).outerHeight();
+      var objectTop = $(this).offset().top + $(this).outerHeight() - $(this).height();
+      /* If the element is out of bounds of the window then fade it out */
+      if (objectBottom - 115 < windowTop || objectTop + 115 > windowBottom) { // object fades out
+        if ($(this).css('opacity') == 1) {$(this).fadeTo(400,0);}
+      } else { //object comes into view
+        if ($(this).css('opacity') == 0) {$(this).fadeTo(400,1);}
+      }
     });
-
-});
-
-
-
-//Timeline Animation
-
-(function($) {
-
-  $.fn.visible = function(partial) {
-    
-      var $t            = $(this),
-          $w            = $(window),
-          viewTop       = $w.scrollTop(),
-          viewBottom    = viewTop + $w.height(),
-          _top          = $t.offset().top,
-          _bottom       = _top + $t.height(),
-          compareTop    = partial === true ? _bottom : _top,
-          compareBottom = partial === true ? _top : _bottom;
-    
-    return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
-
-  };
-    
-})(jQuery);
-
-var win = $(window);
-
-var allMods = $(".content");
-
-allMods.each(function(i, el) {
-  var el = $(el);
-  if (el.visible(true)) {
-    el.addClass("already-visible"); 
-  } 
-});
-
-win.scroll(function(event) {
-  
-  allMods.each(function(i, el) {
-    var el = $(el);
-    if (el.visible(true)) {
-      el.addClass("come-in"); 
-    } 
-  });
-  
-});
-
+  }).scroll(); //invoke scroll-handler on page-load
+})
