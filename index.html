@@ -4,100 +4,123 @@
 <head>
 	<title>Jessica Yu</title>
 	<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-  
+
 	<link rel="stylesheet" href="assets/styles/style.css">
 	<link rel="icon" type="image/png" href="assets/icons/JY_logo.png?">
-	
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script src="assets/scripts/script.js"></script>
 
 </head>
 
-
 <body id="bootstrap-overrides">
-	<div class="container-fluid"></div>
-	<div id="top-bar">
+	<div class="container-fluid">
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top nav-bar">
+			<!-- <div class="container-fluid nav-bar"> -->
+			<!-- <div class="navbar-header page-scroll"> -->
+			<a class="navbar-brand logo py-0" href="#home"><strong>JY.</strong></a>
+
+			<!-- Toggler/collapsibe Button -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="nav navbar-nav ml-auto">
+					<li class="nav-item"><a class="nav-link nav-bar-options py-0" href="#about">About</a></li>
+					<li class="nav-item"><a class="nav-link nav-bar-options py-0" href="#projects">Projects</a></li>
+					<li class="nav-item"><a class="nav-link nav-bar-options py-0 contact" href="#contact">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+		<!-- <div id="top-bar">
 		<ul class="nav-bar">
 			<li class="logo"><a href="#home"><strong>JY.</strong></a></li>
 			<li class="nav-bar-options"><a href="#about">About</a></li>
 			<li class="nav-bar-options"><a href="#projects">Projects</a></li>
 			<li class="contact"><a href="#contact">Contact</a></li>
 		</ul>
-	</div>
+		</div> -->
 
-	<div id="home">
-		<h1>Hello, I'm Jessica Yu.</h1>
-		<h2>BS Computer Science and Mathematics</h2>
-	</div>
+		<div id="home">
+			<h1>Hello, I'm Jessica Yu.</h1>
+			<h2>BS Computer Science and Mathematics</h2>
+		</div>
 
-	<div id="about" class="fade-scroll">
-		<div class="about-content">
-			<img src="assets/images/profPic.JPG" alt="Jessica's profile picture" class="img-circle prof-pic">
-			<div id="about-text">
-				<h4>About Me</h4>
-				<p>Hey! I'm a second-year at Northeastern University majoring in Computer Science and Mathematics. I am
-					seeking to expand my in-class learning to real-life experiences.
-					<br>
-					<br>I love diving deep into programming languages and discovering what each is capable of and how their outcomes differ. 
-					I especially enjoy seeing my programs come to life as I develop them into visually pleasing, easy-to-use applications.
-					<br>
-					<br>Currently, I am a web developer for the Women's Research Engagement Network (WREN) at
-					Northeastern University.
-				</p>
-				<a href='https://drive.google.com/file/d/1DcwVj4zx0m1ca992Uo4of94E4l1x6lW1/view?usp=sharing'
-					target="_blank" class="resume-button">Download Resume</a>
+		<div id="about" class="fade-scroll">
+			<div class="about-content">
+				<img src="assets/images/profPic.JPG" alt="Jessica's profile picture" class="rounded-circle prof-pic">
+				<div id="about-text">
+					<h4>About Me</h4>
+					<p>Hey! I'm a second-year at Northeastern University majoring in Computer Science and Mathematics. I
+						am
+						seeking to expand my in-class learning to real-life experiences.
+						<br>
+						<br>I love diving deep into programming languages and discovering what each is capable of and
+						how
+						their outcomes differ.
+						I especially enjoy seeing my programs come to life as I develop them into visually pleasing,
+						easy-to-use applications.
+						<br>
+						<br>Currently, I am a web developer for the Women's Research Engagement Network (WREN) at
+						Northeastern University.
+					</p>
+					<a href='https://drive.google.com/file/d/1DcwVj4zx0m1ca992Uo4of94E4l1x6lW1/view?usp=sharing'
+						target="_blank" class="resume-button">Download Resume</a>
+				</div>
 			</div>
 		</div>
-	</div>
 
-	<div id="projects" class="fade-scroll">
-		<h3>Projects</h3>
-		<div id="project-content">
-			<div class="project-container">
-				<h5>Portfolio</h5>
-				<a href="https://github.com/jessicayu62/jessicayu62.github.io" target="_blank">
-					<img src="assets/images/portfolioLandingPage.png" alt="Portfolio project landing page"
-						class="project-pic">
-				</a>
-				<h6>A portfolio to showcase my work and information about me. Created template-free using HTML, CSS, and
-					JS, this project will continue to be updated as I expand my skill set.
-				</h6>
-			</div>
-			<div class="project-container">
-				<h5>Pomodoro Timer</h5>
-				<a href="https://github.com/jessicayu62/pomodoro-timer" target="_blank">
-					<img src="assets/images/pomodoroTimerProject.png" alt="Pomodoro timer landing page"
-						class="project-pic">
-				</a>
-				<h6>A timer that follows the pomodoro technique, a time management method to increase focus and decrease
-					mental exhaustion. Built using Java and JavaFX, users can control the timer
-					and add tasks to complete during work sessions.</h6>
+		<div id="projects" class="fade-scroll">
+			<h3>Projects</h3>
+			<div id="project-content">
+				<div class="project-container">
+					<h5>Portfolio</h5>
+					<a href="https://github.com/jessicayu62/jessicayu62.github.io" target="_blank">
+						<img src="assets/images/portfolioLandingPage.png" alt="Portfolio project landing page"
+							class="project-pic">
+					</a>
+					<h6>A portfolio to showcase my work and information about me. Created template-free using HTML, CSS,
+						and
+						JS, this project will continue to be updated as I expand my skill set.
+					</h6>
+				</div>
+				<div class="project-container">
+					<h5>Pomodoro Timer</h5>
+					<a href="https://github.com/jessicayu62/pomodoro-timer" target="_blank">
+						<img src="assets/images/pomodoroTimerProject.png" alt="Pomodoro timer landing page"
+							class="project-pic">
+					</a>
+					<h6>A timer that follows the pomodoro technique, a time management method to increase focus and
+						decrease
+						mental exhaustion. Built using Java and JavaFX, users can control the timer
+						and add tasks to complete during work sessions.</h6>
+				</div>
 			</div>
 		</div>
-	</div>
 
-	<div id="contact" class="fade-scroll">
-		<h3>Contact Me</h3>
-		<div id="contact-logos">
-			<a href="mailto:jessicayu62@gmail.com" target="_blank"><img src="assets/icons/email.png" alt="email logo"
-					class="sizing" id="email"></a>
-			<a href="https://www.linkedin.com/in/jessicayu62/" target="_blank"><img src="assets/icons/linkedin.png"
-					alt="linkedin logo" class="sizing" id="linkedin"></a>
-			<a href="https://github.com/jessicayu62" target="_blank"><img src="assets/icons/github.png"
-					alt="github logo" class="sizing" id="github"></a>
+		<div id="contact" class="fade-scroll">
+			<h3>Contact Me</h3>
+			<div id="contact-logos">
+				<a href="mailto:jessicayu62@gmail.com" target="_blank"><img src="assets/icons/email.png"
+						alt="email logo" class="sizing" id="email"></a>
+				<a href="https://www.linkedin.com/in/jessicayu62/" target="_blank"><img src="assets/icons/linkedin.png"
+						alt="linkedin logo" class="sizing" id="linkedin"></a>
+				<a href="https://github.com/jessicayu62" target="_blank"><img src="assets/icons/github.png"
+						alt="github logo" class="sizing" id="github"></a>
+			</div>
+		</div>
+
+		<div id="footer-section">
+			<p>&lt/> with&nbsp;<span style="color:#FF9F55">♥</span> </p>
+			<p id="footer-sub">© Jessica Yu 2021</p>
 		</div>
 	</div>
-
-	<div id="footer-section">
-		<p>&lt/> with&nbsp;<span style="color:#FF9F55">♥</span> </p>
-		<p id="footer-sub">© Jessica Yu 2021</p>
-	</div>
-</div>
 </body>
 
 </html>
