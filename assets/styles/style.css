@@ -29,6 +29,7 @@ body {
 #bootstrap-overrides a {
 	text-decoration: none;
 	color: black;
+	line-height: 118%;
 }
 
 p {
