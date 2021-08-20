@@ -273,6 +273,7 @@ h6 {
  	height: auto;
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 	animation-timing-function: ease-in-out;
 }
 
