@@ -80,7 +80,7 @@ h5 {
 h6 {
 	font-size: 18px;
 	font-family: 'Spectral', serif;
-	margin: 20px 30px;
+	margin: 20px 25px;
 }
 
 
@@ -265,7 +265,7 @@ h6 {
 
 /* Contact Me Section */
 #contact {
-	padding: 0px 0px 150px;
+	padding: 0px 0px 50px;
 }
 
 #contact-logos {
