@@ -269,12 +269,9 @@ h6 {
 }
 
 #contact-logos {
-	width: auto;
- 	height: auto;
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	animation-timing-function: ease-in-out;
 }
 
 .sizing {
