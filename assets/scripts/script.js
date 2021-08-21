@@ -1,4 +1,5 @@
 $(() => {
+  //Fade-in/out animation
   $(window).scroll(function () {
     var windowBottom = $(this).scrollTop() + $(this).innerHeight();
     var windowTop = $(this).scrollTop();
@@ -15,4 +16,12 @@ $(() => {
       }
     });
   }).scroll(); //invoke scroll-handler on page-load
+
+  // Collapse navbar when click outside 
+  $(document).click(function(event) { 
+    var $target = $(event.target);
+    if(!$target.closest('#menucontainer').length && $('#collapsibleNavbar').is(":visible")) {
+      $('.navbar-toggler').click();
+    }        
+  });
 })
