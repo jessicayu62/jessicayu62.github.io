@@ -18,10 +18,10 @@ $(() => {
   }).scroll(); //invoke scroll-handler on page-load
 
   // Collapse navbar when click outside 
-  $(document).click(function(event) { 
+  $(document).click(function (event) {
     var $target = $(event.target);
-    if(!$target.closest('#menucontainer').length && $('#collapsibleNavbar').is(":visible") && $('.nav-bar-options').position().left == $('.contact').position().left) {
+    if (!$target.closest('#menucontainer').length && $('#collapsibleNavbar').is(":visible") && $('.nav-bar-options').position().left == $('.contact').position().left) {
       $('.navbar-toggler').click();
-    }        
+    }
   });
 })
